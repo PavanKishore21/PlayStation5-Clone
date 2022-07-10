@@ -24,7 +24,7 @@ export const GamePage = () => {
           height: '100vh',
           width: '100vw',}}/>
 
-        <div className={'container'}>
+        <div className={'game-container'}>
           <div className={'top'}>
             <div className={'left'}>
               <img
