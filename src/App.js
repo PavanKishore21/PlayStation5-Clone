@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import Users from "./Components/Users";
 import Welcome  from "./Components/Welcome";
-
+import { GamePage } from "./GamePage";
 import { AuthProvider } from "./Components/Logins/Auth";
 
 import Home from "./Components/Logins/Home";
@@ -22,6 +22,7 @@ function App() {
           <Route path="/loggedin" component={Dashboard} />
           <Route path="/login" component={LogIn} />
           <Route path="/signup" component={SignUp} />
+          <Route path="/game/:id" component={GamePage} />
         </Switch>
       </AuthProvider>
     </>

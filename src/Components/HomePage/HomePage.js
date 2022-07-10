@@ -8,6 +8,7 @@ import { GamesHeader } from "../Data";
 export default function HomePage() {
   const [index, setIndex] = useState(0);
   const {
+    id,
     title,
     subTitle,
     gameImage,
@@ -28,6 +29,7 @@ export default function HomePage() {
           gameImage={gameImage}
           img={img}
           popupMessage={popupMessage}
+          id = {id}
           gameBtn={gameBtn}
         />
       </HomeContainer>

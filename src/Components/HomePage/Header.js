@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "./Popup";
 export default function Header({
+  id,
   title,
   subTitle,
   gameImage,
@@ -29,6 +30,7 @@ export default function Header({
               title={title}
               img={img}
               popupMessage={popupMessage}
+              id = {id}
             />
           </ButtonContainer>
         </HeadersContainer>

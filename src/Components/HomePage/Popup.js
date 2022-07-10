@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import CloseIcon from "@material-ui/icons/Close";
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom";
 export const Popup = ({
+  id,
   showPopup,
   setShowPopup,
   title,
@@ -31,7 +33,10 @@ export const Popup = ({
                 <PopupContent>
                   <h1>Are you ready for {title}</h1>
                   <p>{popupMessage}</p>
+                  <Link to={`/game/${id}`}>
                   <button>Try</button>
+                  </Link>
+
                 </PopupContent>
               </>
               <ClosePopupButton onClick={ClosePopup} />
